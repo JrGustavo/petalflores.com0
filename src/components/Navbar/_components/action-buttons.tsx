@@ -41,56 +41,37 @@ const ActionButtons = () => {
             hidden
             "
                 >
-                    <div className="font-bold flex text-[#F4F4F4] ">Tarifas</div>
+                    <div className="font-bold flex text-[#F4F4F4] ">Suscripciones</div>
                 </Link>
 
 
             </div>
 
             <div className="flex lg:space-x-4 items-center">
-
                 <Link href={"/Contacto"}>
                     <Button
                         className="
-                        hidden
-                        text-[#000000]
-                        text-md
-                        font-bold
-                        bg-[#F4F4F4]
-                        p-6
-                        rounded-[40px]
-                        hover:scale-110
-                        transition-all
-                        duration-300
-                        shadow-md
-                        md:hidden
-                        lg:flex
-                        hover:shadow-[#00FFC2]
-                ">
-                        Contactar con ventas
+        hidden
+        text-[#000000]
+        text-md
+        font-bold
+        bg-[#FDF888]
+        p-6
+        rounded-[40px]
+        hover:scale-110
+        transition-all
+        duration-300
+        shadow-md
+        md:hidden
+        lg:flex
+        hover:shadow-[#F9ECD7]
+        hover:bg-[#FDF888]
+        hover:text-[#000000]
+">
+                        Comprar al por mayor
                     </Button>
                 </Link>
-                <Link href={"/Login"}>
-                    <Button
-                        className="
-              hidden
-              text-[#F4F4F4]
-              text-md
-              font-bold
-              bg-[#000000]
-              p-6
-              rounded-[40px]
-              hover:scale-110
-              transition-all
-              duration-300
-              shadow-md
-              md:hidden
-              lg:flex
-              hover:shadow-[#00FFC2]
-                ">
-                        Ingresar
-                    </Button>
-                </Link>
+
             </div>
             {isDropdownVisible && (
                 <div

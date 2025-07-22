@@ -35,7 +35,7 @@ interface MenuItem {
 
 const items: MenuItem[] = [
     {
-        title: "Productos ",
+        title: "Flores ",
         menu: "productos-petal",
         options: [
             {
@@ -62,7 +62,7 @@ const items: MenuItem[] = [
     },
 
     {
-        title: "Soluciones",
+        title: "Plantas",
         menu: "Soluciones",
         options: [
             {
@@ -88,7 +88,7 @@ const items: MenuItem[] = [
         ],
     },
     {
-        title: "Developers",
+        title: "Regalos",
         menu: "Developers",
         options: [
             {
@@ -115,7 +115,7 @@ const items: MenuItem[] = [
         ],
     },
     {
-        title: "Recursos",
+        title: "Ocasiones",
         menu: "Recursos",
         options: [
             {

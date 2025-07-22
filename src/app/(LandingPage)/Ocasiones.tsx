@@ -4,7 +4,7 @@ const ocasiones = [
     {
         id: 1,
         nombre: "Flores",
-        imagen: "/Flores.jpg?height=120&width=120",
+        imagen: "/Hortensias.jpg?height=120&width=120",
     },
     {
         id: 2,

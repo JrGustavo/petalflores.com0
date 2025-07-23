@@ -111,9 +111,9 @@ export default function Categorias() {
                 {/* Header */}
                 <div className="flex justify-between items-start mb-6">
                     <div>
-                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2">Bursting with newness</h2>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-2">Regalos para todos los días</h2>
                         <p className="text-lg md:text-xl text-gray-600">
-                            {"It's giving texture. It's giving nature. It's giving wild."}
+                            {"¿No sabes qué regalar? Nosotros te ayudamos. "}
                         </p>
                     </div>
                     <Button variant="link" className="text-gray-900 underline hover:no-underline text-lg font-medium">

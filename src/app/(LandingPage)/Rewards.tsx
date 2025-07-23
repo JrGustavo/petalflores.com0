@@ -137,10 +137,10 @@ export default function Rewards() {
             {/* Header */}
             <div className="flex items-start justify-between mb-4">
                 <div>
-                    <h1 className="text-4xl font-bold text-gray-900 mb-3">Trending now</h1>
-                    <p className="text-gray-600 text-lg">The gifts that capture everything we love best about the season.</p>
+                    <h1 className="text-4xl font-bold text-gray-900 mb-3">Cultiva el doble de puntos con nuestra suscripción anual</h1>
+                    <p className="text-gray-600 text-lg">Transforma tu hogar en un jardín de recompensas. Suscríbete ahora y duplica puntos en cada entrega de flores, plantas y regalos únicos.</p>
                 </div>
-                <button className="text-gray-900 font-medium underline hover:no-underline transition-all">Shop now</button>
+                <button className="text-gray-900 font-medium underline hover:no-underline transition-all">Comprar ahora</button>
             </div>
 
             {/* Carousel Container */}

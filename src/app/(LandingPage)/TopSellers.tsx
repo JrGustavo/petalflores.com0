@@ -137,8 +137,10 @@ export default function TopSellers() {
             {/* Header */}
             <div className="flex items-start justify-between mb-4">
                 <div>
-                    <h1 className="text-4xl font-bold text-gray-900 mb-3">Trending now</h1>
-                    <p className="text-gray-600 text-lg">The gifts that capture everything we love best about the season.</p>
+                    <h1 className="text-4xl font-bold text-gray-900 mb-3">Regalos de temporada</h1>
+                    <p className="text-gray-600 text-lg">Los regalos que despiertan la magia más pura de esta temporada.
+
+                    </p>
                 </div>
                 <button className="text-gray-900 font-medium underline hover:no-underline transition-all">Shop now</button>
             </div>

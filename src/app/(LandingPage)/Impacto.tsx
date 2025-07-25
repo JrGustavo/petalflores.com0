@@ -9,15 +9,13 @@ export default function Impacto() {
                 {/* Left Content */}
                 <div className="space-y-6 lg:space-y-8">
                     <div className="space-y-4">
-                        <p className="text-sm font-medium text-white tracking-wide uppercase">FINANCIAL SERVICES</p>
                         <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
-                            Unlocking new efficiencies across the financial sector
+                            El amor está en su momento más intenso
                         </h1>
                     </div>
 
                     <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
-                        Cohere connects the dots in your data to deliver real-time intelligence that drives growth, mitigates risk,
-                        and lets your team focus on what matters most.
+                        Entre las declaraciones apasionadas, las sorpresas románticas y esas celebraciones de "encontré a mi persona especial", septiembre despierta el corazón con momentos únicos. ¿No puedes estar en cada instante mágico? Tranquilo. Aquí es donde brillan nuestros ramos que hablan por ti, detalles que abrazan a distancia y obsequios que susurran "eres especial" sin necesidad de palabras.
                     </p>
 
                     <Button

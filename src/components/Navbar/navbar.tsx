@@ -21,7 +21,7 @@ export default function Navbar() {
     return (
         <header
             className={`sticky top-0 z-50 h-24 px-4 lg:px-20 flex items-center justify-between transition-colors duration-300 ${
-                isScrolled ? "bg-[#000000]" : "bg-[#00211E] shadow-md"
+                isScrolled ? "bg-[#00211E]" : "bg-[#F9ECD7] shadow-md"
             }`}
         >
             <div className="flex items-center space-x-4">

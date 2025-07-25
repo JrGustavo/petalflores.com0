@@ -22,7 +22,6 @@ export default function Home() {
   <Impacto/>
   <Reseñas/>
   <Footer/>
-  <PopUp/>
 
     </div>
   );

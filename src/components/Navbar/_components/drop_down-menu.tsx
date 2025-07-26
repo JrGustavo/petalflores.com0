@@ -51,7 +51,7 @@ const DropdownMenu : React.FC<DropDownMenuProps> = ({onClose}) => {
                     className="my-6 border-[#F4F4F4]"
 
                     value="item-1">
-                    <AccordionTrigger className='text-[#F4F4F4]'>Flores</AccordionTrigger>
+                    <AccordionTrigger className='text-[#000000]'>Flores</AccordionTrigger>
                     <AccordionContent>
                         <Link
                             href="/Plataforma"

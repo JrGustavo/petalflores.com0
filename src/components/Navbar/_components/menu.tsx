@@ -1,31 +1,16 @@
 "use client";
 
-
-
 import React, { useState } from "react";
 
 import {
-
-    Building2,
-    BookOpenText,
     ChevronDown,
-    CreditCard,
-    LayoutDashboard,
-    PencilRuler,
-    Rocket,
-    QrCode,
-    Github,
-    LifeBuoy,
-    Newspaper,
-    TicketPercent,
-    BriefcaseBusiness,
-    ShoppingBasket,
-    ScanEye,
-    Pyramid, SquareDashedMousePointer,
+    Cake, Baby, ScanHeart, Gem, Candy, Cookie, Flame, Torus, Dog, Sprout, Leaf, Flower, Flower2, Clover, Sun,
 
 } from "lucide-react";
 import ContentMenu from "@/components/Navbar/_components/content-menu";
-
+interface NavigationMenuBarProps {
+    isScrolled: boolean;
+}
 
 interface MenuItem {
     title: string;
@@ -36,113 +21,113 @@ interface MenuItem {
 const items: MenuItem[] = [
     {
         title: "Flores ",
-        menu: "productos-petal",
+        menu: "Flores",
         options: [
             {
-                label: "Plataforma Petal",
-                emoji: <LayoutDashboard className="text-[#00211E] font-bold" />,
+                label: "Bouquet de flores",
+                emoji: <Flower className="text-[#00211E] font-bold" />,
                 href: "/Plataforma",
             },
             {
-                label: "Prevención del fraude",
-                emoji: <SquareDashedMousePointer className="text-[#00211E]" />,
+                label: "Flores de temporada",
+                emoji: <Flower2 className="text-[#00211E]" />,
                 href: "/Prevencion",
             },
             {
-                label: "Verificación KYB",
-                emoji: <ScanEye className="text-[#00211E]" />,
-                href: "/Verificacion",
+                label: "Rosas preservadas",
+                emoji: <Clover className="text-[#00211E]" />,
+                href: "/RosasPreservadas",
             },
             {
-                label: "Petal Score",
-                emoji: <Pyramid className="text-[#00211E]" />,
-                href: "/PetalScore",
+                label: "Todas las flores",
+                emoji: <Sun className="text-[#00211E]" />,
+                href: "/TodasLasFlores",
             },
         ],
     },
 
     {
         title: "Plantas",
-        menu: "Soluciones",
+        menu: "Plantas",
         options: [
             {
-                label: "Bancos",
-                emoji: <Building2 className="text-[#00211E]" />,
-                href: "/Bancos",
+                label: "Orquídeas",
+                emoji: <Flower className="text-[#00211E]" />,
+                href: "/Orquideas",
             },
             {
-                label: "Fintechs",
-                emoji: <CreditCard className="text-[#00211E]" />,
-                href: "/Fintechs",
+                label: "Plantas de interior",
+                emoji: <Leaf className="text-[#00211E]" />,
+                href: "/PlantasInterior",
             },
             {
-                label: "Startups",
-                emoji: <Rocket className="text-[#00211E]" />,
-                href: "/Startups",
+                label: "Plantas de exterior",
+                emoji: <Sprout className="text-[#00211E]" />,
+                href: "/PlantasExterior",
             },
             {
-                label: "Plataformas",
-                emoji: <ShoppingBasket className="text-[#00211E]" />,
-                href: "/Plataformas",
+                label: "Plantas Pet-friendly",
+                emoji: <Dog className="text-[#00211E]" />,
+                href: "/PlantasPetFriendly",
             },
         ],
     },
     {
         title: "Regalos",
-        menu: "Developers",
+        menu: "Regalos",
         options: [
             {
-                label: "Documentación",
-                emoji: <QrCode className="text-[#00211E]" />,
-                href: "/Documentacion",
+                label: "Chocolates artesanales",
+                emoji: <Candy className="text-[#00211E]" />,
+                href: "/Chocolates",
             },
             {
-                label: "Bibliotecas & API",
-                emoji: <BookOpenText className="text-[#00211E]" />,
-                href: "/Bibliotecas",
+                label: "Desayunos sorpresa",
+                emoji: <Cookie className="text-[#00211E]" />,
+                href: "/Desayunos",
             },
             {
-                label: "Integraciones",
-                emoji: <PencilRuler className="text-[#00211E]" />,
-                href: "/Integraciones",
+                label: "Velas aromáticas",
+                emoji: <Flame className="text-[#00211E]" />,
+                href: "/Velas",
             },
             {
-                label: "Petal Templates",
-                emoji: <Github className="text-[#00211E]" />,
-                href: "/PetalTemplates",
+                label: "Globos",
+                emoji: <Torus className="text-[#00211E]" />,
+                href: "/Globos",
             },
 
         ],
     },
     {
         title: "Ocasiones",
-        menu: "Recursos",
+        menu: "Ocasiones",
         options: [
             {
-                label: "Centro de soporte ",
-                emoji: <LifeBuoy className="text-[#00211E]" />,
-                href: "/Centro",
+                label: "Cumpleaños ",
+                emoji: <Cake className="text-[#00211E]" />,
+                href: "/Cumpleaños",
             },
             {
-                label: "Contactar Ventas",
-                emoji: <TicketPercent className="text-[#00211E]" />,
-                href: "/Contacto",
+                label: "Nacimiento",
+                emoji: <Baby className="text-[#00211E]" />,
+                href: "/Nacimiento",
             },
             {
-                label: "Noticias Petal",
-                emoji: <Newspaper className="text-[#00211E]" />,
-                href: "/Noticias",
+                label: "Aniversario",
+                emoji: <ScanHeart className="text-[#00211E]" />,
+                href: "/Aniversario",
             },
             {
-                label: "Carreras",
-                emoji: <BriefcaseBusiness className="text-[#00211E]" />,
-                href: "/Carreras",
+                label: "Todas las ocasiones",
+                emoji: <Gem className="text-[#00211E]" />,
+                href: "/TodasLasOcasiones",
             },
         ],
     },
 ];
 
-export function NavigationMenuBar() {
+export function NavigationMenuBar({ isScrolled }: NavigationMenuBarProps) {
     const [activeMenu, setActiveMenu] = useState<string | null>(null);
 
     const handleMouseEnter = (menu: string) => {
@@ -162,16 +147,16 @@ export function NavigationMenuBar() {
          flex
          items-center
          relative
-
-
          "
                 onMouseEnter={() => handleMouseEnter(menu)}
                 onMouseLeave={handleMouseLeave}
             >
                 <div className="flex items-center">
-                    <div className="w-24 text-[#F4F4F4]">{title}</div>
+                    <div className={`w-24 transition-colors duration-300 font-bold ${isScrolled ? '!text-black' : '!text-white'}`}>
+                        {title}
+                    </div>
                     <div>
-                        <ChevronDown className="relative top-[1px] h-3 w-3 text-[#F4F4F4]"  />
+                        <ChevronDown className={`relative top-[1px] h-3 w-3 transition-colors duration-300 ${isScrolled ? '!text-black' : '!text-white'}`} />
                     </div>
                     <div className="mt-20 ">
                         {activeMenu === menu && (

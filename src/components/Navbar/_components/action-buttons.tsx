@@ -8,9 +8,13 @@ import { X, AlignJustify } from "lucide-react";
 import Link from "next/link";
 import DropdownMenu from "@/components/Navbar/_components/drop_down-menu";
 
-const ActionButtons = () => {
+interface ActionButtonsProps {
+    isScrolled: boolean;
+}
 
-    const [isDropdownVisible, setDropdownVisible] = useState(false);
+const ActionButtons = ({ isScrolled }: ActionButtonsProps) => {
+
+    const [isDropdownVisible, setDropdownVisible] = useState<boolean>(false);
 
     const toggleDropdown = () => {
         setDropdownVisible(!isDropdownVisible);
@@ -19,8 +23,6 @@ const ActionButtons = () => {
     const closeDropdown = () => {
         setDropdownVisible(false);
     }
-
-
 
     return (
         <div
@@ -41,10 +43,10 @@ const ActionButtons = () => {
             hidden
             "
                 >
-                    <div className="font-bold flex text-[#F4F4F4] ">Suscripciones</div>
+                    <div className={`font-bold flex transition-colors duration-300 ${isScrolled ? '!text-black' : '!text-white'}`}>
+                        Suscripciones
+                    </div>
                 </Link>
-
-
             </div>
 
             <div className="flex lg:space-x-4 items-center">
@@ -68,17 +70,16 @@ const ActionButtons = () => {
         hover:bg-[#FDF888]
         hover:text-[#000000]
 ">
-                        Comprar al por mayor
+Comprar ahora
                     </Button>
                 </Link>
-
             </div>
+
             {isDropdownVisible && (
                 <div
                     onClick={toggleDropdown}
                     className="
            bg-[#00211E]
-
              p-3
              rounded-full
              xl:hidden
@@ -86,11 +87,12 @@ const ActionButtons = () => {
                     <X className="h-6 w-6 text-[#F4F4F4] items-center justify-center rounded-full" />
                 </div>
             )}
+
             {!isDropdownVisible && (
                 <div
                     onClick={toggleDropdown}
-                    className="bg-[#F4F4F4] p-3 rounded-full xl:hidden">
-                    <AlignJustify className="h-6 w-6 text-primary-600 items-center justify-center rounded-full" />
+                    className={`p-3 rounded-full xl:hidden transition-colors duration-300 ${isScrolled ? 'bg-[#F4F4F4]' : 'bg-[#F4F4F4]'}`}>
+                    <AlignJustify className={`h-6 w-6 items-center justify-center rounded-full transition-colors duration-300 ${isScrolled ? 'text-white' : 'text-primary-600'}`} />
                 </div>
             )}
 

@@ -4,32 +4,32 @@ const ocasiones = [
     {
         id: 1,
         nombre: "Flores",
-        imagen: "/Hortensias.jpg?height=120&width=120",
+        imagen: "/Petalflores.png?height=120&width=120",
     },
     {
         id: 2,
         nombre: "Cumpleaños",
-        imagen: "/Cumpleaños.jpg?height=120&width=120",
+        imagen: "/Petalflorescumpleaños.png?height=120&width=120",
     },
     {
         id: 3,
-        nombre: "Comida y Bebida",
-        imagen: "/Suscripciones.jpg?height=120&width=120",
+        nombre: "Orquídeas",
+        imagen: "/PetalFloresOrquideas.png?height=120&width=120",
     },
     {
         id: 4,
-        nombre: "Regalos Especiales",
-        imagen: "/placeholder.svg?height=120&width=120",
+        nombre: "Chocolates",
+        imagen: "/PetalFloresChocolates.png?height=120&width=120",
     },
     {
         id: 5,
-        nombre: "Canastas",
-        imagen: "/placeholder.svg?height=120&width=120",
+        nombre: "Suscripciones",
+        imagen: "/Suscripciones.png?height=120&width=120",
     },
     {
         id: 6,
-        nombre: "Menos de $30",
-        imagen: "/placeholder.svg?height=120&width=120",
+        nombre: "Regalos corporativos",
+        imagen: "/PetalFlorescorporativos.png?height=120&width=120",
     },
 
 ]

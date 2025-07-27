@@ -28,7 +28,7 @@ const slides: Slide[] = [
         title: "Rosas Elegantes",
         subtitle: "Perfectas para ocasiones especiales",
         buttonText: "Explorar rosas",
-        image: "/placeholder.svg?height=600&width=800",
+        image: "/RosesBackground.jpg?height=600&width=800",
         imageAlt: "Elegante ramo de rosas rojas",
     },
     {

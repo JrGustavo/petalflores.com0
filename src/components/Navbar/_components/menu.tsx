@@ -8,6 +8,7 @@ import {
 
 } from "lucide-react";
 import ContentMenu from "@/components/Navbar/_components/content-menu";
+
 interface NavigationMenuBarProps {
     isScrolled: boolean;
 }
@@ -15,7 +16,7 @@ interface NavigationMenuBarProps {
 interface MenuItem {
     title: string;
     menu: string;
-    options: { label: string; emoji: React.ReactElement; href: string }[];
+    options: { label: string; emoji: React.ReactElement; href: string; isNew?: boolean }[];
 }
 
 const items: MenuItem[] = [
@@ -24,14 +25,15 @@ const items: MenuItem[] = [
         menu: "Flores",
         options: [
             {
-                label: "Bouquet de flores",
+                label: "Arreglos florales",
                 emoji: <Flower className="text-[#00211E] font-bold" />,
                 href: "/Plataforma",
             },
             {
-                label: "Flores de temporada",
+                label: "Amor y Amistad",
                 emoji: <Flower2 className="text-[#00211E]" />,
                 href: "/Prevencion",
+                isNew: true,
             },
             {
                 label: "Rosas preservadas",
@@ -143,11 +145,7 @@ export function NavigationMenuBar({ isScrolled }: NavigationMenuBarProps) {
 
         return (
             <div
-                className="
-         flex
-         items-center
-         relative
-         "
+                className="flex items-center relative"
                 onMouseEnter={() => handleMouseEnter(menu)}
                 onMouseLeave={handleMouseLeave}
             >
@@ -158,13 +156,10 @@ export function NavigationMenuBar({ isScrolled }: NavigationMenuBarProps) {
                     <div>
                         <ChevronDown className={`relative top-[1px] h-3 w-3 transition-colors duration-300 ${isScrolled ? '!text-black' : '!text-white'}`} />
                     </div>
-                    <div className="mt-20 ">
+                    <div className="absolute top-full left-0 mt-2 z-50">
                         {activeMenu === menu && (
                             <ContentMenu
-                                options={options.map((option) => ({
-                                    ...option,
-                                    href: option.href,
-                                }))}
+                                options={options}
                             />
                         )}
                     </div>
@@ -174,18 +169,7 @@ export function NavigationMenuBar({ isScrolled }: NavigationMenuBarProps) {
     };
 
     return (
-        <div
-            className="
-        hidden
-        text-md
-        font-bold
-        space-x-4
-        w-full
-        items-center
-        xl:flex
-        h-24
-        "
-        >
+        <div className="hidden text-md font-bold space-x-4 w-full items-center xl:flex h-24">
             {items.map((item, index) => (
                 <React.Fragment key={index}>
                     <div className="cursor-pointer hidden xl:block">

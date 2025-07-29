@@ -1,45 +1,46 @@
-
-
 import React from 'react';
 import Link from 'next/link';
 
-
 interface ContentMenuProps {
-    options: { label: string; emoji: React.ReactElement; href: string }[];
+    options: { label: string; emoji: React.ReactElement; href: string; isNew?: boolean }[];
 }
 
-
-const ContentMenu : React.FC<ContentMenuProps> = ({options}) => {
+const ContentMenu: React.FC<ContentMenuProps> = ({ options }) => {
     return (
-
         <div className='
-    w-80
-    border
-    border-gray-200
-    rounded-[40px]
-    shadow0md
-    bg-white
-    absolute
-    left-0
-    top-full
-    flex
-    justify-start
-    '
-        >
+            w-80
+            border
+            border-gray-200
+            rounded-[40px]
+            shadow-md
+            bg-white
+            absolute
+            left-0
+            top-full
+            flex
+            justify-start
+        '>
             <ul className='flex flex-col items-start pl-10 space-y-1 py-4'>
                 {options.map((option, index) => (
                     <Link href={option.href} key={index}>
                         <div className='cursor-pointer space-x-4 flex flex-col gap-4 hover:bg-gray-100 w-60 px-6 py-4 rounded-3xl'>
-                            <div className='flex gap-4'>
+                            <div className='flex gap-4 items-center'>
                                 <div>{option.emoji}</div>
-                                <div>{option.label}</div>
+                                <div className='flex items-center'>
+                                    {option.label}
+                                    {option.isNew && (
+                                        <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-full ml-2">
+                                            Nuevo
+                                        </span>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     </Link>
-
                 ))}
             </ul>
-        </div> );
+        </div>
+    );
 }
 
 export default ContentMenu;

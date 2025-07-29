@@ -3,13 +3,13 @@ import { Card, CardContent } from "@/components/ui/card"
 const ocasiones = [
     {
         id: 1,
-        nombre: "Flores",
+        nombre: "Amor y Amistad",
         imagen: "/Petalflores.png?height=120&width=120",
     },
     {
         id: 2,
-        nombre: "Cumpleaños",
-        imagen: "/Petalflorescumpleaños.png?height=120&width=120",
+        nombre: "Arreglos florales",
+        imagen: "/PetalFloresOrquideas.png?height=120&width=120",
     },
     {
         id: 3,
@@ -18,7 +18,7 @@ const ocasiones = [
     },
     {
         id: 4,
-        nombre: "Chocolates",
+        nombre: "Cumpleaños",
         imagen: "/PetalFloresChocolates.png?height=120&width=120",
     },
     {

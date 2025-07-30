@@ -117,7 +117,7 @@ export default function Categorias() {
                         </p>
                     </div>
                     <Button variant="link" className="text-gray-900 underline hover:no-underline text-lg font-medium">
-                        Shop all
+                        Comprar ahora
                     </Button>
                 </div>
 

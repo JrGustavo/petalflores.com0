@@ -142,7 +142,7 @@ export default function TopSellers() {
 
                     </p>
                 </div>
-                <button className="text-gray-900 font-medium underline hover:no-underline transition-all">Shop now</button>
+                <button className="text-gray-900 font-medium underline hover:no-underline transition-all">Comprar ahora</button>
             </div>
 
             {/* Carousel Container */}

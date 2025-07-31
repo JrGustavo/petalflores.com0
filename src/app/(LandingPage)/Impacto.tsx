@@ -14,15 +14,14 @@ export default function Impacto() {
                         </h1>
                     </div>
 
-                    <p className="text-lg text-gray-600 leading-relaxed max-w-lg">
+                    <p className="text-lg text-white leading-relaxed max-w-lg">
                         Entre las declaraciones apasionadas, las sorpresas románticas y esas celebraciones de "encontré a mi persona especial", septiembre despierta el corazón con momentos únicos. ¿No puedes estar en cada instante mágico? Tranquilo. Aquí es donde brillan nuestros ramos que hablan por ti, detalles que abrazan a distancia y obsequios que susurran "eres especial" sin necesidad de palabras.
                     </p>
-
                     <Button
                         size="lg"
-                        className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full text-base font-medium"
+                        className="bg-black hover:bg-[#FDF888] text-white hover:text-black px-8 py-3 rounded-full text-base font-medium"
                     >
-                        Request a demo
+                        Comprar flores
                     </Button>
                 </div>
 

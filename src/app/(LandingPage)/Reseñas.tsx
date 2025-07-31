@@ -58,7 +58,7 @@ export default function Reseñas() {
             {/* Header */}
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-12 gap-4">
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-light text-gray-900">
-                    More Than 20,000 Five-Star Reviews
+                    Creando Sonrisas Desde 2024
                 </h2>
                 <Button
                     variant="outline"

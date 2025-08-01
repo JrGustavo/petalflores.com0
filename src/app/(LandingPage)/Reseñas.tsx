@@ -16,11 +16,11 @@ interface Review {
 const reviews: Review[] = [
     {
         id: 1,
-        name: "Janna",
-        location: "Verified Buyer - Santa Monica, CA",
+        name: "Sofia",
+        location: "Compradora Verificada - Medellín, Colombia",
         rating: 5,
         review:
-            "The flowers were absolutely beautiful and my best friend loved the exact same thing. Would highly recommend UrbanStems.",
+            "Las flores llegaron perfectas y frescas. Mi mamá quedó encantada con el arreglo de rosas rojas. Sin duda volveré a comprar en Petal flores.",
         images: ["/placeholder.svg?height=300&width=200", "/placeholder.svg?height=300&width=200"],
     },
     {

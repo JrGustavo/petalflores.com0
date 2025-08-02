@@ -16,38 +16,38 @@ interface Review {
 const reviews: Review[] = [
     {
         id: 1,
-        name: "Sofia",
-        location: "Compradora Verificada - Medellín, Colombia",
+        name: "Sofía",
+        location: "Compradora Verificada - Medellín, Antioquia",
         rating: 5,
         review:
-            "Las flores llegaron perfectas y frescas. Mi mamá quedó encantada con el arreglo de rosas rojas. Sin duda volveré a comprar en Petal flores.",
+            "Las flores llegaron perfectas y frescas. Mi mamá quedó encantada con el arreglo de rosas rojas. Sin duda volveré a comprar en Petal Flores.",
         images: ["/placeholder.svg?height=300&width=200", "/placeholder.svg?height=300&width=200"],
     },
     {
         id: 2,
-        name: "Lew",
-        location: "Verified Buyer - New York, New York",
+        name: "María José",
+        location: "Compradora Verificada - Bogotá, Cundinamarca",
         rating: 5,
         review:
-            "I ordered a hot pink arrangement for a big anniversary (aren't they all?) and it exceeded my expectations in every way. The arrangement was beautiful and the delivery was sensational.",
+            "Pedí un arreglo de girasoles para el cumpleaños de mi hermana y superó todas mis expectativas. Las flores estaban hermosas y la entrega fue perfecta.",
         images: ["/placeholder.svg?height=300&width=200", "/placeholder.svg?height=300&width=200"],
     },
     {
         id: 3,
-        name: "Jennifer",
-        location: "Verified Buyer - Tampa, FL",
+        name: "Carolina",
+        location: "Compradora Verificada - Cali, Valle del Cauca",
         rating: 5,
         review:
-            "Finally an online florist with product that you aren't going to see the exact same thing at a dozen other online florists. UrbanStems by far offered the best selection, most reasonable pricing and their customer service is impeccable!!",
+            "Por fin una florería online con productos únicos que no vas a encontrar en cualquier otro lugar. Petal Flores ofrece la mejor selección y su atención al cliente es impecable.",
         images: ["/placeholder.svg?height=300&width=200", "/placeholder.svg?height=300&width=200"],
     },
     {
         id: 4,
-        name: "Kara",
-        location: "Verified Buyer - Arlington, VA",
+        name: "Andrea",
+        location: "Compradora Verificada - Barranquilla, Atlántico",
         rating: 5,
         review:
-            "I've been using them for about a year now and I still get excited when the UrbanStems box arrives. The flowers are different every season and I now have an amazing vase collection. And their customer service is amazing!",
+            "Llevo varios meses pidiendo con ellos y siempre me emociono cuando llega la caja de Petal Flores. Las flores son diferentes cada temporada y ahora tengo una colección increíble de floreros.",
         images: ["/placeholder.svg?height=300&width=200", "/placeholder.svg?height=300&width=200"],
     },
 ]
@@ -64,7 +64,7 @@ export default function Reseñas() {
                     variant="outline"
                     className="border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white transition-colors duration-300 bg-transparent"
                 >
-                    SEE ALL REVIEWS
+                    VER TODAS LAS RESEÑAS
                 </Button>
             </div>
 
@@ -90,7 +90,7 @@ export default function Reseñas() {
                                     >
                                         <img
                                             src={image || "/placeholder.svg"}
-                                            alt={`${review.name}'s flower arrangement ${index + 1}`}
+                                            alt={`Arreglo floral de ${review.name} ${index + 1}`}
                                             className="w-48 h-56 object-cover rounded-lg shadow-lg border-4 border-white"
                                         />
                                     </div>
@@ -122,7 +122,7 @@ export default function Reseñas() {
 
                                 {/* Review Text */}
                                 <blockquote className="text-gray-700 text-sm leading-relaxed italic group-hover:text-gray-600 transition-colors duration-300">
-                                    "{review.review}"
+                                    {review.review}
                                 </blockquote>
                             </div>
                         </CardContent>

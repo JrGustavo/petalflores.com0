@@ -23,7 +23,8 @@ import {
     BriefcaseBusiness,
     ShoppingBasket,
     ScanEye,
-    Pyramid, SquareDashedMousePointer, Github,
+    Pyramid, SquareDashedMousePointer, Github, Flower2,
+    Flower, Clover, Sun, Leaf, Sprout, Dog, Candy, Torus, Flame, Cookie, Cake, Baby, ScanHeart, Gem,
 
 } from "lucide-react";
 import React from "react";
@@ -51,62 +52,62 @@ const DropdownMenu : React.FC<DropDownMenuProps> = ({onClose}) => {
                     className="my-6 border-[#F4F4F4]"
 
                     value="item-1">
-                    <AccordionTrigger className='text-[#000000]'>Flores</AccordionTrigger>
+                    <AccordionTrigger className='text-white'>Flores</AccordionTrigger>
                     <AccordionContent>
                         <Link
-                            href="/Plataforma"
+                            href="/"
                             className='flex pt-10'
                             onClick={handleLinkClick}
                         >
                             <div>
-                                <LayoutDashboard className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                                <Flower className='h-6 w-6 mr-4 text-[#F4F4F4]' />
                             </div>
                             <div className="text-[#F4F4F4]">
-                                Plataforma Fleet
+                                Arreglos florales
                             </div>
                         </Link>
                         <Link
-                            href="/Prevencion"
+                            href="/"
 
                             className='flex pt-10'
                             onClick={handleLinkClick}
                         >
                             <div>
-                                <SquareDashedMousePointer className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                                <Flower2 className='h-6 w-6 mr-4 text-[#F4F4F4]' />
                             </div>
 
                             <div className="text-[#F4F4F4]">
-                                Prevención del fraude
-                            </div>
-
-                        </Link>
-                        <Link
-                            href="/Verificacion"
-                            className='flex pt-10'
-                            onClick={handleLinkClick}
-
-                        >
-                            <div>
-                                <ScanEye className='h-6 w-6 mr-4 text-[#F4F4F4]' />
-                            </div>
-
-                            <div className="text-[#F4F4F4]">
-                                Verificación KYB
+                                Amor y Amistad
                             </div>
 
                         </Link>
                         <Link
-                            href="/FleetScore"
+                            href="/"
                             className='flex pt-10'
                             onClick={handleLinkClick}
 
                         >
                             <div>
-                                <Pyramid  className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                                <Clover className='h-6 w-6 mr-4 text-[#F4F4F4]' />
                             </div>
 
                             <div className="text-[#F4F4F4]">
-                                Fleet Score
+                                Rosas preservadas
+                            </div>
+
+                        </Link>
+                        <Link
+                            href="/"
+                            className='flex pt-10'
+                            onClick={handleLinkClick}
+
+                        >
+                            <div>
+                                <Sun  className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                            </div>
+
+                            <div className="text-[#F4F4F4]">
+                                Todas las flores
                             </div>
 
                         </Link>
@@ -116,63 +117,63 @@ const DropdownMenu : React.FC<DropDownMenuProps> = ({onClose}) => {
                     className="my-6 border-[#F4F4F4]"
 
                     value="item-2">
-                    <AccordionTrigger className="text-[#F4F4F4]">Soluciones</AccordionTrigger>
+                    <AccordionTrigger className="text-[#F4F4F4]">Plantas</AccordionTrigger>
                     <AccordionContent>
                         <Link
-                            href="/Bancos"
+                            href="/"
                             className='flex pt-10'
                             onClick={handleLinkClick}
                         >
                             <div>
-                                <Building2 className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                                <Flower className='h-6 w-6 mr-4 text-[#F4F4F4]' />
                             </div>
                             <div className="text-[#F4F4F4]">
-                                Bancos
+                                Orquídeas
                             </div>
                         </Link>
                         <Link
-                            href="/Fintechs"
+                            href="/"
 
                             className='flex pt-10'
                             onClick={handleLinkClick}
 
                         >
                             <div>
-                                <CreditCard className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                                <Leaf className='h-6 w-6 mr-4 text-[#F4F4F4]' />
                             </div>
 
                             <div className="text-[#F4F4F4]">
-                                Fintechs
-                            </div>
-
-                        </Link>
-                        <Link
-                            href="/Startups"
-
-                            className='flex pt-10'
-                            onClick={handleLinkClick}
-                        >
-                            <div>
-                                <Rocket className='h-6 w-6 mr-4 text-[#F4F4F4]' />
-                            </div>
-
-                            <div className="text-[#F4F4F4]">
-                                Startups
+                                Plantas de interior
                             </div>
 
                         </Link>
                         <Link
-                            href="/Plataformas"
+                            href="/"
 
                             className='flex pt-10'
                             onClick={handleLinkClick}
                         >
                             <div>
-                                <ShoppingBasket className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                                <Sprout className='h-6 w-6 mr-4 text-[#F4F4F4]' />
                             </div>
 
                             <div className="text-[#F4F4F4]">
-                                Plataformas
+                                Plantas de exterior
+                            </div>
+
+                        </Link>
+                        <Link
+                            href="/"
+
+                            className='flex pt-10'
+                            onClick={handleLinkClick}
+                        >
+                            <div>
+                                <Dog className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                            </div>
+
+                            <div className="text-[#F4F4F4]">
+                                Plantas Pet-Friendly
                             </div>
 
                         </Link>
@@ -184,63 +185,63 @@ const DropdownMenu : React.FC<DropDownMenuProps> = ({onClose}) => {
 
 
                     value="item-3">
-                    <AccordionTrigger className="text-[#F4F4F4]">Developers</AccordionTrigger>
+                    <AccordionTrigger className="text-[#F4F4F4]">Regalos</AccordionTrigger>
                     <AccordionContent>
                         <Link
-                            href="/Documentacion"
+                            href="/"
                             className='flex pt-10 '
                             onClick={handleLinkClick}
                         >
                             <div>
-                                <QrCode className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                                <Candy className='h-6 w-6 mr-4 text-[#F4F4F4]' />
                             </div>
                             <div className="text-[#F4F4F4]">
-                                Documentación
+                                Chocolates artesanales
                             </div>
                         </Link>
                         <Link
-                            href="/Bibliotecas"
+                            href="/"
                             className='flex pt-10'
                             onClick={handleLinkClick}
 
                         >
                             <div>
-                                <BookOpenText className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                                <Cookie className='h-6 w-6 mr-4 text-[#F4F4F4]' />
                             </div>
 
                             <div className="text-[#F4F4F4]">
-                                Bibliotecas & API
+                                Desayunos sorpresa
                             </div>
 
                         </Link>
                         <Link
-                            href="/Integraciones"
+                            href="/"
 
                             className='flex pt-10'
                             onClick={handleLinkClick}
 
                         >
                             <div>
-                                <PencilRuler className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                                <Flame className='h-6 w-6 mr-4 text-[#F4F4F4]' />
                             </div>
 
                             <div className="text-[#F4F4F4]">
-                                Integraciones
+                                Velas aromáticas
                             </div>
 
                         </Link>
 
                         <Link
-                            href="/FleetTemplates"
+                            href="/"
                             className='flex pt-10'
                             onClick={handleLinkClick}
 
                         >
                             <div>
-                                <Github  className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                                <Torus  className='h-6 w-6 mr-4 text-[#F4F4F4]' />
                             </div>
                             <div className="text-[#F4F4F4]">
-                                Fleet Templates
+                                Globos
                             </div>
 
                         </Link>
@@ -251,33 +252,33 @@ const DropdownMenu : React.FC<DropDownMenuProps> = ({onClose}) => {
                     className="my-6 border-[#F4F4F4]"
 
                     value="item-4">
-                    <AccordionTrigger className="text-[#F4F4F4]">Recursos</AccordionTrigger>
+                    <AccordionTrigger className="text-[#F4F4F4]">Ocasiones</AccordionTrigger>
                     <AccordionContent>
                         <Link
-                            href="/Centro"
+                            href="/"
                             className='flex pt-10'
                             onClick={handleLinkClick}
 
                         >
                             <div>
-                                <LifeBuoy className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                                <Cake className='h-6 w-6 mr-4 text-[#F4F4F4]' />
                             </div>
                             <div className="text-[#F4F4F4]">
-                                Centro de soporte
+                                Cumpleaños
                             </div>
                         </Link>
                         <Link
-                            href="/Contacto"
+                            href="/"
                             className='flex pt-10'
 
                             onClick={handleLinkClick}
                         >
                             <div>
-                                <TicketPercent className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                                <Baby className='h-6 w-6 mr-4 text-[#F4F4F4]' />
                             </div>
 
                             <div className="text-[#F4F4F4]">
-                                Contactar con ventas
+                                Nacimiento
                             </div>
 
                         </Link>
@@ -287,24 +288,24 @@ const DropdownMenu : React.FC<DropDownMenuProps> = ({onClose}) => {
                             onClick={handleLinkClick}
                         >
                             <div>
-                                <Newspaper className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                                <ScanHeart className='h-6 w-6 mr-4 text-[#F4F4F4]' />
                             </div>
 
                             <div className="text-[#F4F4F4]">
-                                Noticias Fleet
+                                Aniversario
                             </div>
                         </Link>
                         <Link
-                            href="/Carreras"
+                            href="/"
                             className='flex pt-10'
                             onClick={handleLinkClick}
                         >
                             <div>
-                                <BriefcaseBusiness className='h-6 w-6 mr-4 text-[#F4F4F4]' />
+                                <Gem className='h-6 w-6 mr-4 text-[#F4F4F4]' />
                             </div>
 
                             <div className="text-[#F4F4F4]">
-                                Carreras
+                                Todas las ocasiones
                             </div>
                         </Link>
                         <div className='flex pt-10'>
@@ -317,37 +318,41 @@ const DropdownMenu : React.FC<DropDownMenuProps> = ({onClose}) => {
                     <Link href={"/"}>
                         <Button
                             className="
-                        text-[#F4F4F4]
-                        text-sm
-                        font-bold
-                        bg-[#000000]
-                        p-6
-                        rounded-[40px]
-                        hover:scale-110
-                        transition-all
-                        duration-300
-                        shadow-md
-                        hover:shadow-[#00FFC2]
-                        ">
-                            Ingresar
+        text-[#F4F4F4]
+        text-sm
+        font-bold
+        bg-[#000000]
+        hover:bg-[#000000]
+        p-6
+        rounded-[40px]
+        hover:scale-110
+        transition-all
+        duration-300
+        shadow-md
+        hover:shadow-xl
+    ">
+                            Suscripciones
                         </Button>
                     </Link>
                     <Link href={"/"}>
                         <Button
                             className="
-                        text-primary-600
-                        text-sm
-                        font-bold
-                        bg-[#F4F4F4]
-                        p-6
-                        rounded-[40px]
-                        hover:scale-110
-                        transition-all
-                        duration-300
-                        shadow-md
-                        hover:shadow-[#00FFC2]
-                        ">
-                            Contactar con ventas
+        text-primary-600
+        text-sm
+        font-bold
+        bg-[#FDF888]
+        hover:bg-[#FDF888]
+        p-6
+        rounded-[40px]
+        transition-all
+        duration-300
+        hover:shadow-lg
+        hover:scale-105
+        hover:-translate-y-1
+        active:scale-95
+        active:translate-y-0
+    ">
+                            Comprar ahora
                         </Button>
                     </Link>
                 </div>

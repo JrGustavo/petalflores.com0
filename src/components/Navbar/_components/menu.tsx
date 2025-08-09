@@ -27,23 +27,23 @@ const items: MenuItem[] = [
             {
                 label: "Arreglos florales",
                 emoji: <Flower className="text-[#00211E] font-bold" />,
-                href: "/Plataforma",
+                href: "/",
             },
             {
                 label: "Amor y Amistad",
                 emoji: <Flower2 className="text-[#00211E]" />,
-                href: "/Prevencion",
+                href: "/",
                 isNew: true,
             },
             {
                 label: "Rosas preservadas",
                 emoji: <Clover className="text-[#00211E]" />,
-                href: "/RosasPreservadas",
+                href: "/",
             },
             {
                 label: "Todas las flores",
                 emoji: <Sun className="text-[#00211E]" />,
-                href: "/TodasLasFlores",
+                href: "/",
             },
         ],
     },

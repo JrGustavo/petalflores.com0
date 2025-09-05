@@ -76,12 +76,12 @@ export default function Footer() {
     const currentLinks = language === 'es' ? footerLinks : footerLinksEn
 
     return (
-        <footer className="bg-[#F9ECD7] text-black py-12 px-4 sm:px-6 lg:px-8">
+        <footer className="bg-[#F5F0E9] text-[#112250] py-12 px-4 sm:px-6 lg:px-8">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div className="space-y-6">
                     <button
                         onClick={toggleLanguage}
-                        className="flex items-center space-x-2 bg-black rounded-full py-2 px-4 w-fit hover:bg-[#00211E] text-white transition-colors"
+                        className="flex items-center space-x-2 bg-[#112250] rounded-full py-2 px-4 w-fit hover:bg-[#112250] text-white transition-colors"
                         aria-label={`Change language to ${language === 'es' ? 'English' : 'Spanish'}`}
                     >
                         <Image
@@ -100,13 +100,13 @@ export default function Footer() {
 
                     <div className="flex space-x-4 ml-[12px]">
                         <Link href="https://www.linkedin.com/company/fleet-ai" aria-label="LinkedIn">
-                            <Linkedin size={24} className="hover:text-[#00211E]" />
+                            <Linkedin size={24} className="hover:text-[#112250]" />
                         </Link>
                         <Link href="https://x.com/" aria-label="Twitter">
-                            <Twitter size={24} className="hover:text-[#00211E]" />
+                            <Twitter size={24} className="hover:text-[#112250]" />
                         </Link>
                         <Link href="https://www.instagram.com/" aria-label="Instagram">
-                            <Instagram size={24} className="hover:text-[#00211E]" />
+                            <Instagram size={24} className="hover:text-[#112250]" />
                         </Link>
                     </div>
                 </div>
@@ -117,7 +117,7 @@ export default function Footer() {
                         <ul className="space-y-2">
                             {section.links.map((link, linkIndex) => (
                                 <li key={linkIndex}>
-                                    <Link href={link.href} className="text-black hover:underline hover:text-[#00211E]">
+                                    <Link href={link.href} className="text-[#112250] hover:underline hover:text-[#00211E]">
                                         {link.name}
                                     </Link>
                                 </li>
@@ -134,14 +134,14 @@ export default function Footer() {
             </div>
 
             {/* Legal Section */}
-            <div className="text-lg md:text-sm text-[#000000] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+            <div className="text-lg md:text-sm text-[#112250] max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
                 <p className="text-center">
                     Copyright © 2025 Petal S.A.S. Todos los derechos reservados.
                 </p>
                 <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 mt-4">
-                    <Link href="#" className="hover:text-[#00211E] underline underline-offset-2">Términos y condiciones </Link>
-                    <Link href="#" className="hover:text-[#00211E] underline underline-offset-2">Política de privacidad </Link>
-                    <Link href="https://petalflores.com" className="hover:text-[#00211E] underline underline-offset-2" target="_blank" rel="noopener noreferrer">
+                    <Link href="#" className="hover:text-[#112250] underline underline-offset-2">Términos y condiciones </Link>
+                    <Link href="#" className="hover:text-[#112250] underline underline-offset-2">Política de privacidad </Link>
+                    <Link href="https://petalflores.com" className="hover:text-[#112250] underline underline-offset-2" target="_blank" rel="noopener noreferrer">
                         petalflores.com
                     </Link>
                 </div>

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 
 export default function Impacto() {
     return (
-        <div className="min-h-screen bg-[#00211E] flex items-center justify-center p-4">
+        <div className="min-h-screen bg-[#112250] flex items-center justify-center p-4">
             <div className="max-w-7xl w-full grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                 {/* Left Content */}
                 <div className="space-y-6 lg:space-y-8">
